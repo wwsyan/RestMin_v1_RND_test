@@ -16,7 +16,15 @@ PS，模式1下，环境的obs展开后的维数为72；网络尺寸的命名是
 </ol>
 
 ## 测试结果
-为了显示上的便利，所有指标放大了 1e5 倍。 
-| 网络尺寸 | 指标 | 图示 | 说明 |
-| :---: | :---: | :---: | :---: |
-| little | MSE loss | <img src="rnd_test_log/mean.png"> | |
+为了显示上的便利，所有指标放大了 1e5 倍。
+
+<img src="rnd_reward_log/legend.png">
+
+| 指标 | 图示 | 说明 |
+| :---: | :---: | :---: |
+| mean | <img src="rnd_reward_log/mean.png"> | 三个网络差别不大。 |
+| min | <img src="rnd_reward_log/min.png"> | little网络接近于0，表现最佳，small和standard网络存在一定程度的过拟合。 |
+| max | <img src="rnd_reward_log/max.png"> | little网络最佳，与mean的差值最大。 |
+
+## 小结
+little网络，即hidden layer为[16, 8]，表现最佳。
