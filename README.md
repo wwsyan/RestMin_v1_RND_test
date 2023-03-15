@@ -5,7 +5,7 @@
 <li>small：[16, 16]</li>
 <li>standard：[32, 32]</li>
 </ul>
-PS，模式1下，环境的obs展开后的维数为72；网络尺寸的命名是测试进行的，与结果无对应关系。
+PS，模式1下，环境的obs展开后的维数为72；网络尺寸（little，small和standard）是测试前命名的，与结果无对应关系。
 
 ## 执行文件
 RNDmodel_test.py
